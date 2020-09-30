@@ -5,7 +5,7 @@ $("#submit").on("click", function(){
     $("#cityInput").val("");
 
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c39f0e681e04bca87bf68b4f1fc255ac" + "&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c39f0e681e04bca87bf68b4f1fc255ac" + "&units=imperial",
         type: "GET",
         dataType: "json"
 
