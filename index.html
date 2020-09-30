@@ -16,28 +16,40 @@
     </header>
 
     <!-- search bar area for cities -->
-    <main>
+    
     <div class="container-fluid">
         <div class="row">
-            <aside class="col-lg-3 bg-light">
-            <h5 class="mt-1">Search for a City:</h5>
-           
-            <div class="form-inline form-group">
-                <label for="city"><strong>City:</strong></label>
-                <input type="text" class="form-control" id="cityInput"></div>
+            <div class="col-lg-4 bg-light">
+            <h5>Search for a City:</h5>
+            <div class="input-group">
+                <div class="input-group-append">
+                <input type="text" class="form-control" id="cityInput">
               <button  class="btn btn-primary" id="submit">Submit<i class="fa fa-search"></i></button>
             </div>
-
-            <ul class="search-history"></ul>
-        </aside>
-
-        <div class="col-lg-9">
-            <div id="today" class="mt-3"></div>
-            <div id="forecast" class="mt-3"></div>
         </div>
-       </div>
-     </div>
-</main>
+
+
+        <div class="card">
+            <ul class="list-group list-group-flush list">
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-8 pt-3 pb-4">
+      <div id ="currentCity" class= "mt-4">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="mt-4 col-md-12">
+      <h4 id="fivedayForecast" class="mt-3 hide">5 Day Forecast:</h4>
+      <div id="forecast" class="row">
+    </div>
+    </div>
+
+      
 
     <!-- Optional JavaScript -->
    
