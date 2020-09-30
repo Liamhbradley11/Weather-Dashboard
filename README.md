@@ -2,7 +2,7 @@
 
 ## **Description**
 
-This weather dashboard will allow the user to input a city of their choice and it will output the forecast for the current day followed by a 5 day forecast for the week.  The user will be told what state the city is in and the current date.  Each follwoing day will be labeled and have icons to display the weather.  The searched cities will be saved below the search bar to go back to and reference.
+This weather dashboard will allow the user to input a city of their choice and it will output the forecast for the current day followed by a 5 day forecast for the week.  The user will be told what state and/or country the city is in and the current date.  Each following day will be labeled and have icons to display the weather.  The searched cities will be saved below the search bar to go back to and reference.
 
 ## **Tech/Framework Used**
 
@@ -16,6 +16,12 @@ This weather dashboard will allow the user to input a city of their choice and i
 ## **Visuals**
 * ![alt text](https://i.paste.pics/e07ae3ad544b67985b08a53c9de6ad1b.png)
 * ![alt text](https://i.paste.pics/5395d6c3f3a6960f4e069d78198ce867.png)
+
+## **Code**
+* A snippet of code to get the information and display the forecast.
+
+![alt text](https://i.paste.pics/b304c98be5e7ae82ff8f9a08a88d318d.png)
+
 
 ## **Website**
 

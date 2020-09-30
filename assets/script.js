@@ -23,7 +23,7 @@ $("#submit").on("click", function(){
 }
 
 
-
+//CURRENT WEATHER
     function currentWeather(data) {
         var date = new Date();
 
@@ -40,7 +40,7 @@ $("#submit").on("click", function(){
     
 
 
-
+//UV INDEX
     (lat = data.coord.lat), (lon = data.coord.lon);
 
     $.ajax({
@@ -52,13 +52,14 @@ $("#submit").on("click", function(){
         .addClass("card-text current-uv")
         .text(" UV index : " + data.value);
 
+        //append to the page
         city.append(cityDate, image);
         cardBody.append(city, temperature, humidity, windSpeed, uvIndex);
         card.append(cardBody);
         $("#currentCity").append(card);
     });
 }
-
+//5 day weather forecast
     function weatherForecast() {
         $.ajax({
             url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=8eedc46b2ac663b5418793e8f468fa4b" + "&units=imperial",
@@ -77,6 +78,7 @@ $("#submit").on("click", function(){
                     var humidity = $("<p>").addClass("card-text forecastHumidity").text("Humidity: " + data.list[i].main.humidity + "%");
                     var image = $("<img>").attr("src","https://openweathermap.org/img/w/" + data.list[i].weather[0].icon +".png");
     
+                    //append to the page
                     cardBody.append(cityDate, image, temperature, humidity);
                     card.append(cardBody);
                     $("#forecast").append(card);
