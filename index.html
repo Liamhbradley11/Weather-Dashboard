@@ -4,49 +4,56 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./assets/style.css">
-    <!-- Bootstrap CSS -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
 
     <title>Weather Dashboard</title>
-  </head>
-  <body>
+    </head>
     <header class="container-fluid text-center text-white bg-dark p-2">
         <h1 class="display-3"><strong>Weather Dashboard</strong></h1>
     </header>
 
-    <!-- search bar area for cities -->
-    
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 bg-light">
+
+            <div class="col-lg-4 bg-light pt-3 pb-3">
             <h5>Search for a City:</h5>
+
             <div class="input-group">
-                <div class="input-group-append">
                 <input type="text" class="form-control" id="cityInput">
+                <div class="input-group-append">
               <button  class="btn btn-primary" id="submit">Submit<i class="fa fa-search"></i></button>
             </div>
         </div>
 
+                
+                <div class="card">
+                    <ul class="list-group list-group-flush list">
+                    </ul>
+                </div>
+            </div>
 
-        <div class="card">
-            <ul class="list-group list-group-flush list">
-          </ul>
-        </div>
-      </div>
+            
+            <div class="col-lg-8 pt-3 pb-4">
 
-      <div class="col-lg-8 pt-3 pb-4">
-      <div id ="currentCity" class= "mt-4">
+               
+                <div id="currentCity" class="mt-4">
 
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 
     <div class="mt-4 col-md-12">
-      <h4 id="fivedayForecast" class="mt-3 hide">5 Day Forecast:</h4>
-      <div id="forecast" class="row">
+        <h5 id="forecast5" class="mt-3 hide">5-Day Forecast:</h5>
+        <div id="forecast" class="row">
+        </div>
+
     </div>
+
     </div>
 
       
@@ -54,10 +61,10 @@
     <!-- Optional JavaScript -->
    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
