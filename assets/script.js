@@ -5,7 +5,7 @@ $("#submit").on("click", function(){
     $("#cityInput").val("");
 
     $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c39f0e681e04bca87bf68b4f1fc255ac" + "&units=imperial",
+        url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c39f0e681e04bca87bf68b4f1fc255ac" + "&units=imperial",
         type: "GET",
         dataType: "json"
 
@@ -44,7 +44,7 @@ $("#submit").on("click", function(){
     (lat = data.coord.lat), (lon = data.coord.lon);
 
     $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=c39f0e681e04bca87bf68b4f1fc255ac",
+        url: "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=c39f0e681e04bca87bf68b4f1fc255ac",
         type: "GET",
 
     }).then(function(data) {   
@@ -62,7 +62,7 @@ $("#submit").on("click", function(){
 //5 day weather forecast
     function weatherForecast() {
         $.ajax({
-            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=8eedc46b2ac663b5418793e8f468fa4b" + "&units=imperial",
+            url: "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=8eedc46b2ac663b5418793e8f468fa4b" + "&units=imperial",
             method: "GET",
             dataType: "json"
         }).then(function(data) {
