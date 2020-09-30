@@ -25,7 +25,7 @@ This weather dashboard will allow the user to input a city of their choice and i
 
 ## **Website**
 
-* https://liamhbradley11.github.io/Work-Day-Planner/
+*  https://liamhbradley11.github.io/Weather-Dashboard/
 
 ## **Authors**
 
